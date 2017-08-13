@@ -9,7 +9,9 @@ Multiplayer video games are huge, they have millions to hundreds of millions of 
 Most prebuild multiplayer server don't use p2p because having the player connect to 20 different computers (Mesh) will slow their computers down taking away from the experince the game gives. The way they do it instead is a client server client model.
 
 <p align="center">
-<img src="http://practice.geeksforgeeks.org/ckeditor/images/uploads/1491250148_client_server.png"><br>
+  <img src="http://aarononeal.info/wp-content/uploads/2010/12/MeshNetworkPreview.png"><br>
+  Full Mesh Topology<br>
+  <img src="http://practice.geeksforgeeks.org/ckeditor/images/uploads/1491250148_client_server.png"><br>
   Client Sever Client Model
 </p>
 
