@@ -3,4 +3,4 @@
 </p>
 
 # What is LakeFox?
-A multi player p2p network
+Multiplayer video games are huge, they have millions to hundreds of millions of players playing at a time. Most game devlopment companies fouces on the gaame development (which make sense), but fail to realize how mush goes into making the game multiplayer. Some devlopers will give up on making their game multiplayer, while some will go through the pain staking process of doing it them selfs.
