@@ -3,4 +3,4 @@
 </p>
 
 # What is LakeFox?
-Multiplayer video games are huge, they have millions to hundreds of millions of players playing at a time. Most game devlopment companies fouces on the gaame development (which make sense), but fail to realize how mush goes into making the game multiplayer. Some devlopers will give up on making their game multiplayer, while some will go through the pain staking process of doing it them selfs.
+Multiplayer video games are huge, they have millions to hundreds of millions of players playing at a time. Most game development companies focuses on the game development (which make sense), but fail to realize how mush goes into making the game multiplayer. Some developers will give up on making their game multiplayer, while some will go through the pain staking process of doing it them selves. If they do succeeded in building the server they have to host the server which is expensive which discourages the little guys from building games and forcing the big guys to charge or put ads on their games. While creating a game we realized how hard this should be simple process of making a multiplayer game is, so we created LakeFox.
