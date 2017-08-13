@@ -13,3 +13,4 @@ Most prebuild multiplayer server don't use p2p because having the player connect
   Client Sever Client Model
 </p>
 
+In this model all the clients send their game-state to the server, when the server gets all the game-states it sends all the clients the synced version.
