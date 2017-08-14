@@ -119,9 +119,9 @@ ws.on("connect", (connection)=>{
 });
 ```
 
-# Licence
+# License
 
-Please read the LICENCE file above
+Please read the LICENSE file above
 
 ### Want to use LakeFox
 
