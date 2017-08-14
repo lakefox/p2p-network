@@ -10,11 +10,11 @@ Most prebuild multiplayer server don't use p2p because having the player connect
 
 <p align="center">
   <div style="display: inline;">
-  	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/FullMeshNetwork.svg/2000px-FullMeshNetwork.svg.png" width="50%"><br>
+  	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/FullMeshNetwork.svg/2000px-FullMeshNetwork.svg.png" width="40%"><br>
   	Full Mesh Topology
     </div>
     <div style="display: inline;">
-  	<img src="http://practice.geeksforgeeks.org/ckeditor/images/uploads/1491250148_client_server.png" width="50%">	<br>
+  	<img src="http://practice.geeksforgeeks.org/ckeditor/images/uploads/1491250148_client_server.png" width="40%">	<br>
   	Client Sever Topology
   </div>
 </p>
