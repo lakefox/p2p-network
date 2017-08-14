@@ -34,8 +34,20 @@ The network is self healing so when a player disconnects the server sends out a 
 
 Download [fox.js](https://github.com/lakefox/Fox/blob/master/fox.js)
 ``` shell
-$ node fox LOBBY ROOM PORT
+$ node fox LOBBY ROOM PORT (HOST)
 ```
 ### Lobby
 
 LOBBY is for
+
+### ROOM
+
+ROOM is for
+
+### PORT
+
+PORT is for
+
+### (HOST)
+
+HOST is for
