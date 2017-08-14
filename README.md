@@ -32,10 +32,14 @@ The network is self healing so when a player disconnects the server sends out a 
 
 # How to use it?
 
+## Downloading
+
 Download [fox.js](https://github.com/lakefox/Fox/blob/master/fox.js)
 ``` shell
 $ node fox LOBBY ROOM PORT (HOST)
 ```
+
+## Running
 
 LakeFox is setup to run multiple games on the same server for so the way the connections are broken up are through lobbies and rooms.
 
