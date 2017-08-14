@@ -73,7 +73,7 @@ HOST is the only optional parmeter it will only be used if you want to use a sel
 
 _Note: you should only use this feature for development purposes to ensure stability_
 ``` shell
-$ node fox njvscb 0 PORT (HOST)
+$ node fox njvscb 0 8080 http://localhost:3000
 ```
 
 ## Connecting
