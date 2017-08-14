@@ -101,7 +101,7 @@ ws.on("connect", (connection)=>{
     	var data = JSON.parse(raw);
         // See if you are already connected
         if (connected) {
-  			// HANDLE THE DATA
+  		// HANDLE THE DATA
 	} else {
           // Check to see if the server sent the connection message
           if (data.CONNECTED == true) {
