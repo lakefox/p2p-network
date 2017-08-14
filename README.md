@@ -27,3 +27,5 @@ In peer mesh toplogy each player (peer) is connected to two other players. When 
 <p align="center">
 	<img src="https://cdn.rawgit.com/lakefox/LakeFox/f7db608e/connections.png"><br>
 </p>
+
+The network is self healing so when a player disconnects the server sends out a message to all the players in the room and they will automatically reconnect keeping the network running.
