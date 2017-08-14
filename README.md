@@ -86,6 +86,8 @@ $ node fox njvscb 0 8080
 ```
 Then using a pesudo code example (Using a JS syntax)
 ``` javascript
+var connected = false;
+
 // Connect to the WebSocket Server hosted on the player's computer
 var ws = Websocket("http://localhost:8080");
 
@@ -95,9 +97,15 @@ ws.on("connect", (connection)=>{
 	connection.on("DATA", (raw)=>{
     	// Parse the raw JSON
     	var data = JSON.parse(raw);
-        // Check to see if the server sent 
-        if (data.CONNECTED == true) {
-        
+        // See if you are already connected
+        if (connected) {
+  			// HANDLE THE DATA
+		} else {
+          // Check to see if the server sent the connection message
+          if (data.CONNECTED == true) {
+              // Store that you are connected
+              connected = true;
+          }
         }
     });
 });
