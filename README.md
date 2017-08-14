@@ -87,6 +87,7 @@ $ node fox njvscb 0 8080
 Then using a pesudo code example (Using a JS syntax)
 
 _Note: this code should be part of your game_
+
 _Note 2: this code doesn't work in any language it just looks like JS_
 #### Receiving
 ``` javascript
