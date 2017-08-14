@@ -30,16 +30,16 @@ In peer mesh toplogy each player (peer) is connected to two other players. When 
 
 The network is self healing so when a player disconnects the server sends out a message to all the players in the room and they will automatically reconnect keeping the network running.
 
-# How to use it?
+# How to use it? (Node.js)
 
-## Downloading (Node.js)
+## Downloading
 
 Download [fox.js](https://github.com/lakefox/Fox/blob/master/fox.js)
 ``` shell
 $ node fox LOBBY ROOM PORT (HOST)
 ```
 
-## Running (Node.js)
+## Running
 
 LakeFox is setup to run multiple games on the same server for so the way the connections are broken up are through lobbies and rooms.
 
@@ -68,4 +68,4 @@ _Note: there isn't a default port so if you leave it blank the software **will**
 
 HOST is the only optional parmeter it will only be used if you want to use a self hosted version of [lake.js](https://github.com/lakefox/Lake/blob/master/lake.js) it defaults to [lakefox.net](http://lakefox.net) (Recommended)
 
-## Connecting (Node.js)
+## Connecting
