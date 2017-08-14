@@ -56,7 +56,9 @@ $ node fox njvscb 0 PORT (HOST)
 
 ### PORT
 
-PORT is for
+The port is left open for the developer (you) to decide. It is left open so if the game needs to use a port for another feature.
+
+_Note: there isn't a default port so if you leave it blank the software **will** crash_
 
 ### (HOST)
 
