@@ -63,6 +63,9 @@ $ node fox njvscb 0 PORT (HOST)
 The port is left open for the developer (you) to decide. It is left open so if the game needs to use a port for another feature.
 
 _Note: there isn't a default port so if you leave it blank the software **will** crash_
+``` shell
+$ node fox njvscb 0 8080 (HOST)
+```
 
 ### (HOST)
 
