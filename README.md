@@ -18,7 +18,7 @@ Most prebuild multiplayer server don't use p2p because having the player connect
 In this model all the clients send their game-state to the server, when the server gets all the game-states it sends all the clients the synced version. LakeFox Work by not connecting the players in a client server topology or full mesh topology, but a peer neighbor mesh topology.
 
 <p align="center">
-	<img src="https://cdn.rawgit.com/lakefox/LakeFox/76fedf98/topology.png"><br>
+	<img src="https://cdn.rawgit.com/lakefox/LakeFox/76fedf98/topology.png" width="50%"><br>
   	Peer Neighbor Mesh Topology
 </p>
 
