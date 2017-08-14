@@ -40,7 +40,10 @@ $ node fox LOBBY ROOM PORT (HOST)
 LakeFox is setup to run multiple games on the same server for so the way the connections are broken up are through lobbies and rooms.
 
 ### Lobby
-Lobbies are  
+Lobbies are basically the game, so if I created a game called Ninja's vs. Cowboy's TM my lobby name could be njvscb
+``` shell
+$ node fox njvscb ROOM PORT (HOST)
+```
 
 ### ROOM
 
