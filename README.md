@@ -36,9 +36,11 @@ Download [fox.js](https://github.com/lakefox/Fox/blob/master/fox.js)
 ``` shell
 $ node fox LOBBY ROOM PORT (HOST)
 ```
-### Lobby
 
-LOBBY is for
+LakeFox is setup to run multiple games on the same server for so the way the connections are broken up are through lobbies and rooms.
+
+### Lobby
+Lobbies are  
 
 ### ROOM
 
