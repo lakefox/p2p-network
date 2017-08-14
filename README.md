@@ -32,14 +32,14 @@ The network is self healing so when a player disconnects the server sends out a 
 
 # How to use it?
 
-## Downloading
+## Downloading (Node.js)
 
 Download [fox.js](https://github.com/lakefox/Fox/blob/master/fox.js)
 ``` shell
 $ node fox LOBBY ROOM PORT (HOST)
 ```
 
-## Running
+## Running (Node.js)
 
 LakeFox is setup to run multiple games on the same server for so the way the connections are broken up are through lobbies and rooms.
 
@@ -68,4 +68,4 @@ _Note: there isn't a default port so if you leave it blank the software **will**
 
 HOST is the only optional parmeter it will only be used if you want to use a self hosted version of [lake.js](https://github.com/lakefox/Lake/blob/master/lake.js) it defaults to [lakefox.net](http://lakefox.net) (Recommended)
 
-## Connecting
+## Connecting (Node.js)
