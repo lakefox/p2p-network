@@ -84,4 +84,21 @@ Start LakeFox on the players computer
 ``` shell
 $ node fox njvscb 0 8080
 ```
-Then
+Then using a pesudo code example (Using a JS syntax)
+``` javascript
+// Connect to the WebSocket Server hosted on the player's computer
+var ws = Websocket("http://localhost:8080");
+
+// Listen for the WebSocket connection to be made
+ws.on("connect", (connection)=>{
+	// Listen for the DATA event
+	connection.on("DATA", (raw)=>{
+    	// Parse the raw JSON
+    	var data = JSON.parse(raw);
+        // Check to see if the server sent 
+        if (data.CONNECTED == true) {
+        
+        }
+    });
+});
+```
