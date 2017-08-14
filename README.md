@@ -105,6 +105,9 @@ ws.on("connect", (connection)=>{
         // See if you are already connected
         if (connected) {
   		// HANDLE THE DATA
+        handleFunc(data);
+        // Send data to the other players
+        ws.send(newData);
 	} else {
           // Check to see if the server sent the connection message
           if (data.CONNECTED == true) {
@@ -114,9 +117,4 @@ ws.on("connect", (connection)=>{
         }
     });
 });
-```
-
-#### Sending
-```
-
 ```
