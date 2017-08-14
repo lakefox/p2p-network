@@ -102,7 +102,7 @@ ws.on("connect", (connection)=>{
         // See if you are already connected
         if (connected) {
   			// HANDLE THE DATA
-		} else {
+} else {
           // Check to see if the server sent the connection message
           if (data.CONNECTED == true) {
               // Store that you are connected
