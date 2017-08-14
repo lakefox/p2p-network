@@ -67,3 +67,5 @@ _Note: there isn't a default port so if you leave it blank the software **will**
 ### (HOST)
 
 HOST is the only optional parmeter it will only be used if you want to use a self hosted version of [lake.js](https://github.com/lakefox/Lake/blob/master/lake.js) it defaults to [lakefox.net](http://lakefox.net) (Recommended)
+
+## Connecting
