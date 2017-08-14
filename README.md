@@ -78,7 +78,7 @@ $ node fox njvscb 0 8080 http://localhost:3000
 
 ## Connecting
 
-LakeFox is a platform/language indepentent framework, it communtinicates through wesockets and runs anywhere Node.Js runs.
+LakeFox is a platform/language indepentent framework, it communtinicates through websockets and runs anywhere Node.Js runs.
 
 1. Start LakeFox on the players computer
 ``` shell
