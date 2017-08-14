@@ -118,3 +118,11 @@ ws.on("connect", (connection)=>{
     });
 });
 ```
+
+# Licence
+
+Please read the LICENCE file above
+
+### Want to use LakeFox
+
+If you are interested in using LakeFox for your project, or have any questions please email me at mason@lakefox.net
