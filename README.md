@@ -87,6 +87,7 @@ $ node fox njvscb 0 8080
 Then using a pesudo code example (Using a JS syntax)
 
 _Note: this code should be part of your game_
+#### Receiving
 ``` javascript
 var connected = false;
 
