@@ -119,7 +119,7 @@ ws.on("connect", (connection)=>{
 });
 ```
 
-# How to use it? (Node.js)
+# How to use it? (Browser)
 # License
 
 Please read the LICENSE file above
