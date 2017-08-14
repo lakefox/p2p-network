@@ -120,6 +120,16 @@ ws.on("connect", (connection)=>{
 ```
 
 # How to use it? (Browser)
+## Downloading
+
+Download [fox.bundle.js](https://github.com/lakefox/Fox/blob/master/fox.bundle.js)
+
+## Include the script
+
+``` html
+<script src="fox.bundle.js"></script>
+```
+
 # License
 
 Please read the LICENSE file above
