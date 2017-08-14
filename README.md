@@ -33,3 +33,6 @@ The network is self healing so when a player disconnects the server sends out a 
 # How to use it?
 
 - Download [fox.js](https://github.com/lakefox/Fox/blob/master/fox.js)
+``` shell
+$ node fox LOBBY ROOM PORT
+```
