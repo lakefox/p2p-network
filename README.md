@@ -25,7 +25,7 @@ In this model all the clients send their game-state to the server, when the serv
 In peer mesh toplogy each player (peer) is connected to two other players. When the (player) recives some data from another player (From) it keeps a copy of the data and sends the other player (To).
 
 <p align="center">
-	<img src="https://cdn.rawgit.com/lakefox/LakeFox/f7db608e/connections.png"><br>
+	<img src="https://cdn.rawgit.com/lakefox/LakeFox/f7db608e/connections.png" width="50%"><br>
 </p>
 
 The network is self healing so when a player disconnects the server sends out a message to all the players in the room and they will automatically reconnect keeping the network running.
