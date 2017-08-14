@@ -78,16 +78,10 @@ $ node fox njvscb 0 8080 http://localhost:3000
 
 ## Connecting
 
-LakeFox is a platform/language indepentent framework, it communtinicates through wesockets and rns anywhere Node.Js runs.
-```html
-<script src="https://cdn.rawgit.com/socketio/socket.io-client/c58ecfc4/dist/socket.io.js"></script>
-<script>
-  const socket = io('http://localhost:8080');
-  function send() {
-  	socket.emit("DATA", document.querySelector("#ta1").value);
-  }
-  socket.on("DATA", (msg)=>{
-  	document.querySelector("#ta2").innerHTML += "\n"+msg+"\n"
-  })
-</script>
+LakeFox is a platform/language indepentent framework, it communtinicates through wesockets and runs anywhere Node.Js runs.
+
+1. Start LakeFox on the players computer
+``` shell
+$ node fox njvscb 0 8080
 ```
+2. 
