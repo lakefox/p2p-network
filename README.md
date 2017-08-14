@@ -78,7 +78,7 @@ $ node fox njvscb 0 8080 http://localhost:3000
 
 ## Connecting
 
-LakeFox is a platform/language indepentent framework, it communtinicates through websockets and runs anywhere Node.Js runs. To connect and send messages through the websockets you will need to connect to http://localhost:PORT, (PORT being what ever you have set it to be), then once the connection is established you will send and receive everything through the "DATA" channel. After the websocket connection is made and all the p2p cnnections are made the server will send ```{"CONNECTED": true}``` 
+LakeFox is a platform/language indepentent framework, it communtinicates through websockets and runs anywhere Node.Js runs. To connect and send messages through the websockets you will need to connect to http://localhost:PORT, (PORT being what ever you have set it to be), then once the connection is established you will send and receive everything through channel. After the websocket connection is made and all the p2p cnnections are made the server will send ```{"CONNECTED": true}``` 
 
 Start LakeFox on the players computer
 ``` shell
@@ -99,7 +99,7 @@ var ws = Websocket("http://localhost:8080");
 // Listen for the WebSocket connection to be made
 ws.on("connect", (connection)=>{
 	// Listen for the DATA event
-	connection.on("DATA", (raw)=>{
+	connection.on("message", (raw)=>{
     	// Parse the raw JSON
     	var data = JSON.parse(raw);
         // See if you are already connected
