@@ -47,7 +47,11 @@ $ node fox njvscb ROOM PORT (HOST)
 
 ### ROOM
 
-ROOM is for
+Rooms are subcatagories for the lobbies, so in Ninja's vs. Cowboy's TM there are 2 v 2 room's that four people can fight each other. So I will create a room using a simple counter so the first room is room 0.
+__Note these name's are just used as an example you can use anything for the LOBBY or ROOM
+``` shell
+$ node fox njvscb 0 PORT (HOST)
+```
 
 ### PORT
 
