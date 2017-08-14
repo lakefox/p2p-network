@@ -36,3 +36,5 @@ Download [fox.js](https://github.com/lakefox/Fox/blob/master/fox.js)
 ``` shell
 $ node fox LOBBY ROOM PORT
 ```
+- LOBBY
+...- LOBBY is
