@@ -1,1 +1,11 @@
-theme: jekyll-theme-merlot
+# Site settings
+title: LakeFox
+email: mason@lakefox.net
+author: Mason Wright
+description: "P2P Multiplayer Server"
+baseurl: ""
+url: "http://lakefox.net"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
