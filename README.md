@@ -115,3 +115,8 @@ ws.on("connect", (connection)=>{
     });
 });
 ```
+
+#### Sending
+```
+
+```
