@@ -132,7 +132,7 @@ Download [fox.bundle.js](https://github.com/lakefox/Fox/blob/master/fox.bundle.j
 
 # License
 
-Please read the LICENSE file above
+Please read the LICENSE file above TEST
 
 ### Want to use LakeFox
 
