@@ -69,7 +69,7 @@ $ node fox njvscb 0 8080 (HOST)
 
 ### (HOST)
 
-HOST is the only optional parmeter it will only be used if you want to use a self hosted version of [lake.js](https://github.com/lakefox/Lake/blob/master/lake.js) it defaults to [lakefox.net](http://lakefox.net) (Recommended)
+HOST is the only optional parmeter it will only be used if you want to use a self hosted version of [lake.js](https://github.com/lakefox/Lake/blob/master/lake.js) it defaults to [pnm.lakefox.net](http://pnm.lakefox.net) (Recommended)
 
 **You should only use this feature for development purposes to ensure stability**
 ``` shell
