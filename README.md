@@ -127,7 +127,7 @@ Download [fox.js](https://github.com/lakefox/Fox)
 ## Include the script
 
 ``` html
-<script src="fox.bundle.js"></script>
+<script src="fox.js"></script>
 ```
 
 # License
