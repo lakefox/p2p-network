@@ -130,6 +130,14 @@ Download [fox.js](https://github.com/lakefox/Fox)
 <script src="fox.js"></script>
 ```
 
+## Basic Usage
+
+``` javascript
+var fx = new fox(,(msg)=>{
+
+});
+```
+
 # License
 
 Please read the [LICENSE](https://github.com/lakefox/LakeFox.github.io/blob/master/LICENSE)
