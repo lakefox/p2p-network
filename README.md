@@ -122,7 +122,7 @@ ws.on("connect", (connection)=>{
 # How to use it? (Browser)
 ## Downloading
 
-Download [fox.bundle.js](https://github.com/lakefox/Fox/blob/master/fox.bundle.js)
+Download [fox.js](https://github.com/lakefox/Fox)
 
 ## Include the script
 
