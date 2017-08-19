@@ -58,7 +58,7 @@ _Note: these name's are just used as an example you can use anything for the LOB
 $ node fox njvscb 0 PORT (HOST)
 ```
 
-### PORT
+### PORT (Node.JS Only)
 
 The port is left open for the developer (you) to decide. It is left open so if the game needs to use a port for another feature.
 
