@@ -30,7 +30,7 @@ In peer mesh toplogy each player (peer) is connected to two other players. When 
 
 The network is self healing so when a player disconnects the server sends out a message to all the players in the room and they will automatically reconnect keeping the network running.
 
-# How to use it? (Node.js)
+# How to use it? (Node.JS)
 
 ## Downloading
 
@@ -42,39 +42,6 @@ $ node fox LOBBY ROOM PORT (HOST)
 ## Running
 
 LakeFox is setup to run multiple games on the same server for so the way the connections are broken up are through lobbies and rooms.
-
-### Lobby
-Lobbies are basically the game, so if I created a game called Ninja's vs. Cowboy's TM my lobby name could be njvscb
-``` shell
-$ node fox njvscb ROOM PORT (HOST)
-```
-
-### ROOM
-
-Rooms are subcatagories for the lobbies, so in Ninja's vs. Cowboy's TM there are 2 v 2 room's that four people can fight each other. So I will create a room using a simple counter so the first room is room 0.
-
-_Note: these name's are just used as an example you can use anything for the LOBBY or ROOM_
-``` shell
-$ node fox njvscb 0 PORT (HOST)
-```
-
-### PORT (Node.JS Only)
-
-The port is left open for the developer (you) to decide. It is left open so if the game needs to use a port for another feature.
-
-_Note: there isn't a default port so if you leave it blank the software **will** crash_
-``` shell
-$ node fox njvscb 0 8080 (HOST)
-```
-
-### (HOST)
-
-HOST is the only optional parmeter it will only be used if you want to use a self hosted version of [lake.js](https://github.com/lakefox/Lake/blob/master/lake.js) it defaults to [pnm.lakefox.net](http://pnm.lakefox.net) (Recommended)
-
-**You should only use this feature for development purposes to ensure stability**
-``` shell
-$ node fox njvscb 0 8080 http://localhost:3000
-```
 
 ## Connecting
 
@@ -136,6 +103,39 @@ Download [fox.js](https://github.com/lakefox/Fox)
 var fx = new fox(LOBBY, ROOM, (msg)=>{
 
 }, (HOST));
+```
+
+### Lobby
+Lobbies are basically the game, so if I created a game called Ninja's vs. Cowboy's TM my lobby name could be njvscb
+``` shell
+$ node fox njvscb ROOM PORT (HOST)
+```
+
+### ROOM
+
+Rooms are subcatagories for the lobbies, so in Ninja's vs. Cowboy's TM there are 2 v 2 room's that four people can fight each other. So I will create a room using a simple counter so the first room is room 0.
+
+_Note: these name's are just used as an example you can use anything for the LOBBY or ROOM_
+``` shell
+$ node fox njvscb 0 PORT (HOST)
+```
+
+### PORT (Node.JS Only)
+
+The port is left open for the developer (you) to decide. It is left open so if the game needs to use a port for another feature.
+
+_Note: there isn't a default port so if you leave it blank the software **will** crash_
+``` shell
+$ node fox njvscb 0 8080 (HOST)
+```
+
+### (HOST)
+
+HOST is the only optional parmeter it will only be used if you want to use a self hosted version of [lake.js](https://github.com/lakefox/Lake/blob/master/lake.js) it defaults to [pnm.lakefox.net](http://pnm.lakefox.net) (Recommended)
+
+**You should only use this feature for development purposes to ensure stability**
+``` shell
+$ node fox njvscb 0 8080 http://localhost:3000
 ```
 
 # License
