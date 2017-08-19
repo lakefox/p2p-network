@@ -133,7 +133,7 @@ Download [fox.js](https://github.com/lakefox/Fox)
 ## Basic Usage
 
 ``` javascript
-var fx = new fox(,(msg)=>{
+var fx = new fox(LOBBY, ROOM, (msg)=>{
 
 });
 ```
