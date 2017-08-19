@@ -49,7 +49,7 @@ LakeFox is a platform/language indepentent framework, it communtinicates through
 
 Start LakeFox on the players computer
 ``` shell
-$ node fox njvscb 0 8080
+$ node fox LOBBY ROOM PORT
 ```
 Then using a pesudo code example (Using a JS syntax)
 
