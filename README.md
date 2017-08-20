@@ -104,6 +104,8 @@ var fx = new fox(LOBBY, ROOM, (msg)=>{
 }, (HOST));
 ```
 
+_For a real example go to [LakeFox.html](https://github.com/lakefox/Fox/blob/master/lakefox.html)_
+
 # Configuration Options
 
 ### Lobby
