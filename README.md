@@ -104,6 +104,8 @@ var fx = new fox(LOBBY, ROOM, (msg)=>{
 }, (HOST));
 ```
 
+# Configuration Options
+
 ### Lobby
 Lobbies are basically the game, so if I created a game called Ninja's vs. Cowboy's TM my lobby name could be njvscb
 ``` shell
