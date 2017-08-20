@@ -100,8 +100,10 @@ Download [fox.js](https://github.com/lakefox/Fox)
 
 ``` javascript
 var fx = new fox(LOBBY, ROOM, (msg)=>{
-	// Handle the msg
+  // Handle the msg
+
 }, (HOST));
+
 //Send a message
 fx.msg("Send Message");
 ```
