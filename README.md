@@ -102,6 +102,8 @@ Download [fox.js](https://github.com/lakefox/Fox)
 var fx = new fox(LOBBY, ROOM, (msg)=>{
 	// Handle the msg
 }, (HOST));
+//Send a message
+fx.msg("Send Message");
 ```
 
 _For a real example go to [LakeFox.html](https://github.com/lakefox/Fox/blob/master/lakefox.html)_
