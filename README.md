@@ -97,7 +97,7 @@ Download [fox.min.js](https://github.com/lakefox/Fox)
 ## Include the script
 
 ``` html
-<script src="fox.js"></script>
+<script src="fox.min.js"></script>
 ```
 
 ## Basic Usage
