@@ -92,7 +92,7 @@ ws.on("connect", (connection)=>{
 # How to use it? (Browser)
 ## Downloading
 
-Download [fox.js](https://github.com/lakefox/Fox)
+Download [fox.min.js](https://github.com/lakefox/Fox)
 
 ## Include the script
 
