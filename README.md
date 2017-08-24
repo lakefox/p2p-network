@@ -103,7 +103,7 @@ Download [fox.min.js](https://github.com/lakefox/Fox)
 ## Basic Usage
 
 ``` javascript
-var fx = new fox(LOBBY, ROOM, (msg)=>{
+var fx = new fox(LOBBY, ROOM, (msg, senderId)=>{
   // Handle the msg
 }, (HOST));
 
