@@ -110,12 +110,12 @@ var fx = new fox(LOBBY, ROOM, (msg, senderId)=>{
 //Send a message
 fx.msg("Send Message");
 
-// Add a new user
+// Fires when a new users connectes
 fx.addUser = (id)=>{
 
 }
 
-// Remove a user
+// Fires when a user disconnects
 fx.removeUser = (id)=>{
   
 }
