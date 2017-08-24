@@ -117,6 +117,7 @@ fx.addUser = (id)=>{
 
 // Remove a user
 fx.removeUser = (id)=>{
+  
 }
 ```
 
