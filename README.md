@@ -32,7 +32,7 @@ The network is self healing so when a player disconnects the server sends out a 
 
 # Demo
 
-Go to [pnm.lakefox.net](pnm.lakefox.net). This will connect you to LOBBY: m, ROOM: m, you will connect to everyone that opens this demo up.
+Go to [pnm.lakefox.net](pnm.lakefox.net). This will connect you to LOBBY: njvscb, ROOM: 0, you will connect to everyone that opens this demo up.
 
 # How to use it? (Node.JS)
 
