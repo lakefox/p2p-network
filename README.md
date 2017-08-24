@@ -109,6 +109,15 @@ var fx = new fox(LOBBY, ROOM, (msg, senderId)=>{
 
 //Send a message
 fx.msg("Send Message");
+
+// Add a new user
+fx.addUser = (id)=>{
+
+}
+
+// Remove a user
+fx.removeUser = (id)=>{
+}
 ```
 
 _For a real example go to [LakeFox.html](https://github.com/lakefox/Fox/blob/master/lakefox.html)_
