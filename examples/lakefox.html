@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LakeFox</title>
+  </head>
+  <body>
+    <textarea id="ta1" rows="8" cols="80"></textarea><br><br>
+    <button type="button" id="button" onclick="send()">SEND</button><br><br>
+    <textarea id="ta2" rows="8" cols="80"></textarea>
+    <script src="./fox browser/fox.min.js"></script>
+    <script>
+      var f = new fox("njvscb", 0,(m)=>{
+        console.log(m)
+        document.querySelector("#ta2").value += "\n"+m;
+      }, window.location.href);
+      function send() {
+        console.log("SENDING")
+        f.msg(document.querySelector("#ta1").value);
+        document.querySelector("#ta1").value = "";
+      }
+    </script>
+  </body>
+</html>
