@@ -17,6 +17,7 @@ function drawMap(width, height, size) {
 }
 
 function drawSquare(x, y, color) {
+  console.log(x,y,color);
   mapData[x][y] = color;
   ctx.fillStyle = color;
   ctx.fillRect(x*size, y*size, size, size);
@@ -61,7 +62,6 @@ drawMap(5000,5000,100);
 
 var fx = new fox("game", new Date().getHours().toString(), (raw)=>{
   var data = JSON.parse(raw);
-  console.log(data)
   drawSquare(data.x, data.y, data.color);
 });
 
