@@ -61,6 +61,7 @@ drawMap(5000,5000,100);
 
 var fx = new fox("game", new Date().getHours().toString(), (raw)=>{
   var data = JSON.parse(raw);
+  console.log(data)
   drawSquare(data.x, data.y, data.color);
 });
 
