@@ -99,5 +99,5 @@ document.addEventListener("click", (e)=> {
   var x = Math.floor(e.pageX/size);
   var y = Math.floor(e.pageY/size);
   drawSquare(x,y,color)
-  // fx.msg(JSON.stringify({x:x,y:y,color:color}));
+  fx.msg(JSON.stringify({x:x,y:y,color:color}));
 });
