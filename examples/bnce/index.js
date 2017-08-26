@@ -17,17 +17,49 @@ function drawMap(width, height, size) {
 }
 
 function drawSquare(x, y, color) {
+  mapData[x][y] = color;
   ctx.fillStyle = color;
   ctx.fillRect(x*size, y*size, size, size);
+  drawMiniMap(205, (img)=>{
+	   document.querySelector("#img").innerHTML = "";
+    document.querySelector("#img").appendChild(img);
+  });
 }
+
+function drawMiniMap(size, cb) {
+  var c = document.createElement("canvas");
+  c.width = size;
+  c.height = size;
+  var s = size/50;
+  var ct = c.getContext("2d");
+  for (var x = 0; x < 50; x++) {
+    for (var y = 0; y < 50; y++) {
+      if (mapData[x][y]) {
+        ct.fillStyle = mapData[x][y];
+        ct.fillRect(x*s, y*s, s, s);
+      }
+    }
+  }
+  cb(c);
+}
+
 
 var speed = 20;
 var size = 100;
 var color = '#'+Math.floor(Math.random()*16777215).toString(16);
 var players = [];
 
+var mapData = [];
+for (var x = 0; x < 50; x++) {
+  mapData[x] = [];
+  for (var y = 0; y < 50; y++) {
+    mapData[x][y] = undefined;
+  }
+}
+
 drawMap(5000,5000,100);
-var fx = new fox("bnce.io", new Date().getHours().toString(), (raw)=>{
+
+var fx = new fox("game", new Date().getHours().toString(), (raw)=>{
   var data = JSON.parse(raw);
   drawSquare(data.x, data.y, data.color);
 });
@@ -67,5 +99,5 @@ document.addEventListener("click", (e)=> {
   var x = Math.floor(e.pageX/size);
   var y = Math.floor(e.pageY/size);
   drawSquare(x,y,color)
-  fx.msg(JSON.stringify({x:x,y:y,color:color}));
+  // fx.msg(JSON.stringify({x:x,y:y,color:color}));
 });

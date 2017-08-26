@@ -8,12 +8,66 @@
     html, body {
       margin: 0;
       padding: 0;
+      font-family: sans-serif;
     }
     #canvas {
       border: none;
     }
+    #leaderboard {
+      width: 225px;
+      height: 350px;
+      background-color: #fff;
+      position: fixed;
+      bottom: 50px;
+      right: 20px;
+      box-shadow: 0px 0px 5px 0px rgba(70,70,70,0.4);
+      border: 1px solid #fff;
+      border-radius: 5px;
+      user-select: none;
+    }
+    #title {
+      text-align: center;
+      margin-top: 5px;
+      color: rgb(70,70,70);
+      font-size: 22px;
+      width: 80%;
+      height: 30px;
+      margin-left: 10%;
+      border-bottom: 1px solid rgb(70,70,70);
+    }
+    #infobar {
+      width: 70%;
+      height: 50px;
+      background-color: #fff;
+      position: fixed;
+      top: 20px;
+      left: 15%;
+      box-shadow: 0px 0px 5px 0px rgba(70,70,70,0.4);
+      border: 1px solid #fff;
+      border-radius: 5px;
+    }
+    .color {
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgb(240,240,240);
+    }
+    #img {
+      width: 205px;
+      height: 205px;
+      margin-left: 10px;
+      margin-top: 45px;
+    }
   </style>
   <body>
+    <div id="leaderboard">
+      <div id="title">
+        Leader Board
+      </div>
+      <div id="img"></div>
+    </div>
+    <div id="infobar">
+      <div class="color" style="background-color: #126b44;"></div>
+    </div>
     <canvas id="canvas" width="5000px" height="5000px"></canvas>
     <script src="https://rawgit.com/lakefox/Fox/master/fox.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
