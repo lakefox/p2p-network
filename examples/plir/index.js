@@ -21,8 +21,17 @@ function drawSquare(x, y, color) {
   ctx.fillStyle = color;
   ctx.fillRect(x*size, y*size, size, size);
   drawMiniMap(205, (img)=>{
-	   document.querySelector("#img").innerHTML = "";
+	  document.querySelector("#img").innerHTML = "";
     document.querySelector("#img").appendChild(img);
+    document.querySelector("#scores").innerHTML = "";
+    var s = stats();
+    for (var i = 0; i < Object.keys(s).length; i++) {
+      var key = Object.keys(s)[i];
+      document.querySelector("#scores").innerHTML += '<div style="background: '+key+'" class="c">'+s[key]+'</div>';
+    }
+    if (won()) {
+      console.log("won")
+    }
   });
 }
 
@@ -43,11 +52,53 @@ function drawMiniMap(size, cb) {
   cb(c);
 }
 
+function stats() {
+  var mapStats = {};
+  for (var x = 0; x < 50; x++) {
+    for (var y = 0; y < 50; y++) {
+      if (mapData[x][y]) {
+        if (!mapStats[mapData[x][y]]) mapStats[mapData[x][y]] = 0;
+        mapStats[mapData[x][y]] += 1;
+      }
+    }
+  }
+  var sort = [];
+  for (var color in mapStats) {
+    sort.push([color, mapStats[color]]);
+  }
+  sort.sort(function(a, b) {
+    return b[1] - a[1];
+  });
+  var obj = {};
+  for (var i = 0; i < sort.length; i++) {
+    obj[sort[i][0]] = sort[i][1];
+  }
+  return obj;
+}
 
-var speed = 20;
+function won() {
+  for (var x = 0; x < 50; x++) {
+    for (var y = 0; y < 50; y++) {
+      if (!mapData[x][y]) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+var speed = 50;
 var size = 100;
 var color = '#'+Math.floor(Math.random()*16777215).toString(16);
 var players = [];
+var room = "plir";
+document.querySelector("#link").innerHTML = "http://plir.io/#"+Math.floor(Math.random()*10)+Math.floor(Math.random()*10)+Math.floor(Math.random()*10)+Math.floor(Math.random()*10)+Math.floor(Math.random()*10);
+document.querySelector("#link").href = document.querySelector("#link").innerHTML.slice(15);
+
+if (window.location.hash != "") {
+  room = window.location.hash;
+  window.onload = removeScreen;
+}
 
 var mapData = [];
 for (var x = 0; x < 50; x++) {
@@ -59,7 +110,7 @@ for (var x = 0; x < 50; x++) {
 
 drawMap(5000,5000,100);
 
-var fx = new fox("game", "room", (raw)=>{
+var fx = new fox("game", room, (raw)=>{
   var data = JSON.parse(raw);
   if (raw[0] == "[") {
     mapData = data;
@@ -70,7 +121,7 @@ var fx = new fox("game", "room", (raw)=>{
         }
       }
     }
-  } else {
+  } else if (data.type == "cmd") {
     drawSquare(data.x, data.y, data.color);
   }
 });
@@ -116,9 +167,26 @@ onkeydown = onkeyup = (e)=>{
     window.scrollBy(x, y);
 }
 
-document.addEventListener("click", (e)=> {
+document.querySelector("#canvas").addEventListener("click", (e)=> {
   var x = Math.floor(e.pageX/size);
   var y = Math.floor(e.pageY/size);
   drawSquare(x,y,color)
-  fx.msg(JSON.stringify({x:x,y:y,color:color}));
+  fx.msg(JSON.stringify({type:"cmd",x:x,y:y,color:color}));
 });
+
+function removeScreen() {
+  document.querySelector("#bg").style.display = "none";
+  document.querySelector("body").style.overflow = "inherit";
+  document.querySelector("html").style.overflow = "inherit";
+}
+
+function pwf() {
+  room = document.querySelector("#link").innerHTML.slice(16);
+  removeScreen();
+}
+
+function pn() {
+  room = Math.floor(Math.random()*50).toString();
+  window.location.href = "#"+room;
+  removeScreen();
+}

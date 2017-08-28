@@ -9,17 +9,19 @@
       margin: 0;
       padding: 0;
       font-family: sans-serif;
+      overflow: hidden;
+      width: 5230px;
     }
     #canvas {
       border: none;
     }
     #leaderboard {
       width: 225px;
-      height: 340px;
-      background-color: #fff;
+      height: 100%;
+      background: #fff;
       position: fixed;
-      bottom: 50px;
-      right: 20px;
+      bottom: 0px;
+      right: 0px;
       box-shadow: 0px 0px 5px 0px rgba(70,70,70,0.4);
       border: 1px solid #fff;
       border-radius: 5px;
@@ -35,41 +37,94 @@
       margin-left: 10%;
       border-bottom: 1px solid rgb(70,70,70);
     }
-    #infobar {
-      width: 70%;
-      height: 50px;
-      background-color: #fff;
-      position: fixed;
-      top: 20px;
-      left: 15%;
-      box-shadow: 0px 0px 5px 0px rgba(70,70,70,0.4);
-      border: 1px solid #fff;
-      border-radius: 5px;
-    }
-    .color {
-      width: 20px;
-      height: 20px;
-      border: 1px solid rgb(240,240,240);
-    }
     #img {
+      position: fixed;
       width: 205px;
       height: 205px;
       margin-left: 10px;
-      margin-top: 45px;
+      bottom: 10px;
+      border: 1px solid rgb(70,70,70);
+    }
+    #play {
+      position: fixed;
+      width: 500px;
+      height: 600px;
+      background: #fff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      box-shadow: 0px 0px 5px 0px rgba(70,70,70,0.4);
+    }
+    #plir {
+      text-align: center;
+      font-size: 100px;
+      color: #49426d;
+      margin-top: 35px;
+    }
+    #share {
+      text-align: center;
+      color: rgb(70,70,70);
+      margin-top: 35px;
+    }
+    #link {
+      border-radius: 5px;
+      width: 215px;
+      height: 15px;
+    }
+    #pn {
+      margin-top: 15px;
+      background: rgb(70,70,70);
+      width: 110px;
+      height: 28px;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    #bg {
+      background: rgba(255,255,255,0.4);
+      width: 100%;
+      height: 100%;
+      position: fixed;
+    }
+    .c {
+      color: #fff;
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 2px;
+      text-align: center;
+    }
+    #scores {
+      width: 180px;
+      margin-left: 17px;
+      margin-top: 10px;
     }
   </style>
   <body>
     <div id="leaderboard">
       <div id="title">
-        Mini Map
+        Leader Board
+      </div>
+      <div id="scores">
       </div>
       <div id="img"></div>
     </div>
-    <div id="infobar">
-      <div class="color" style="background-color: #126b44;"></div>
+    <div id="bg">
+      <div id="play">
+        <div id="plir">
+          Plir.io
+        </div>
+        <div id="share">
+          Share this link to play with friends <br> <br>
+          <a id="link" href="#83763" onclick="pwf()">http://plir.io/#83763</a> <br> <br>
+          or <br>
+          <button id="pn" onclick="pn()">
+            Play Now
+          </button>
+        </div>
+      </div>
     </div>
     <canvas id="canvas" width="5000px" height="5000px"></canvas>
-    <script src="https://rawgit.com/lakefox/Fox/master/fox.min.js"></script>
+    <!-- <script src="https://rawgit.com/lakefox/Fox/master/fox.min.js"></script> -->
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
