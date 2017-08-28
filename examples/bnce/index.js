@@ -17,7 +17,6 @@ function drawMap(width, height, size) {
 }
 
 function drawSquare(x, y, color) {
-  console.log(x,y,color);
   mapData[x][y] = color;
   ctx.fillStyle = color;
   ctx.fillRect(x*size, y*size, size, size);
@@ -60,17 +59,36 @@ for (var x = 0; x < 50; x++) {
 
 drawMap(5000,5000,100);
 
-var fx = new fox("game", new Date().getHours().toString(), (raw)=>{
+var fx = new fox("game", "room", (raw)=>{
   var data = JSON.parse(raw);
-  drawSquare(data.x, data.y, data.color);
+  if (raw[0] == "[") {
+    mapData = data;
+    for (var x = 0; x < mapData.length; x++) {
+      for (var y = 0; y < mapData[0].length; y++) {
+        if (mapData[x][y] != null) {
+          drawSquare(x, y, mapData[x][y]);
+        }
+      }
+    }
+  } else {
+    drawSquare(data.x, data.y, data.color);
+  }
 });
 
+var lastUser = undefined;
 fx.addUser = (id)=>{
-
+  console.log(id)
+  if (!lastUser) {
+    lastUser = id;
+    console.log("sending")
+    fx.msg(JSON.stringify(mapData));
+  }
 }
 
 fx.removeUser = (id)=>{
-
+  if (id == lastUser) {
+    lastUser = undefined;
+  }
 }
 
 // Controls
