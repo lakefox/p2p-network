@@ -158,6 +158,8 @@ HOST is the only optional parmeter it will only be used if you want to use a sel
 $ node fox njvscb 0 8080 http://localhost:3000
 ```
 
+Also the connection to pnm.lakefox.net defaults to _https_ if you would like to run it off _http_ on the host opition just put "http"
+
 # License
 
 Please read the [LICENSE](https://github.com/lakefox/LakeFox.github.io/blob/master/LICENSE)
