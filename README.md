@@ -30,10 +30,6 @@ In peer mesh toplogy each player (peer) is connected to two other players. When 
 
 The network is self healing so when a player disconnects the server sends out a message to all the players in the room and they will automatically reconnect keeping the network running.
 
-# Demo
-
-Go to [pnm.lakefox.net](pnm.lakefox.net). This will connect you to LOBBY: njvscb, ROOM: 0, you will connect to everyone that opens this demo up.
-
 # How to use it? (Node.JS)
 
 ## Downloading
@@ -151,7 +147,7 @@ $ node fox njvscb 0 8080 (HOST)
 
 ### (HOST)
 
-HOST is the only optional parmeter it will only be used if you want to use a self hosted version of [lake.js](https://github.com/lakefox/Lake/blob/master/lake.js) it defaults to [pnm.lakefox.net](http://pnm.lakefox.net) (Recommended)
+HOST is the only optional parmeter it will only be used if you want to use a self hosted version of [lake.js](https://github.com/lakefox/Lake/blob/master/lake.js) it defaults to [https://pnm.lakefox.net](http://pnm.lakefox.net) (Recommended)
 
 **You should only use this feature for development purposes to ensure stability**
 ``` shell
