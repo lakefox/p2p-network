@@ -44,6 +44,7 @@ Download [fox.min.js](https://github.com/lakefox/Fox)
 ## Basic Usage
 
 ``` javascript
+// LOBBY ROOM CALLBACK HOST HTTP
 var fx = new fox(LOBBY, ROOM, (msg, senderId)=>{
   // Handle the msg
 }, (HOST));
