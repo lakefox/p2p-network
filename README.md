@@ -30,62 +30,7 @@ In peer mesh toplogy each player (peer) is connected to two other players. When 
 
 The network is self healing so when a player disconnects the server sends out a message to all the players in the room and they will automatically reconnect keeping the network running.
 
-# How to use it? (Node.JS)
-
-## Downloading
-
-``` shell
-$ npm install lakefox
-```
-
-## Running
-
-LakeFox is setup to run multiple games on the same server for so the way the connections are broken up are through lobbies and rooms.
-
-## Connecting
-
-LakeFox is a platform/language indepentent framework, it communtinicates through websockets and runs anywhere Node.Js runs. The reason for running everything through websockets is most games aren't writen in Node.Js, but in faster languages like C++. To make LakeFox run with any language you want we decided to use a universal connection protocall that allow two-way communication (Websockets) to connect the platform. To connect and send messages through the websockets you will need to connect to http://localhost:PORT, (PORT being what ever you have set it to be), then once the connection is established you will send and receive everything through channel. After the websocket connection is made and all the p2p cnnections are made the server will send ```{"CONNECTED": true}```
-
-Start LakeFox on the players computer
-``` shell
-$ node fox LOBBY ROOM PORT
-```
-Then using a pesudo code example (Using a JS syntax)
-
-_Note: this code should be part of your game_
-
-_Note 2: this code doesn't work in any language it just looks like JS_
-#### Sending/Receiving
-``` javascript
-var connected = false;
-
-// Connect to the WebSocket Server hosted on the player's computer
-var ws = Websocket("http://localhost:8080");
-
-// Listen for the WebSocket connection to be made
-ws.on("connect", (connection)=>{
-	// Listen for the DATA event
-	connection.on("message", (raw)=>{
-    	// Parse the raw JSON
-    	var data = JSON.parse(raw);
-        // See if you are already connected
-        if (connected) {
-  		// HANDLE THE DATA
-        handleFunc(data);
-        // Send data to the other players
-        ws.send(newData);
-	} else {
-          // Check to see if the server sent the connection message
-          if (data.CONNECTED == true) {
-              // Store that you are connected
-              connected = true;
-          }
-        }
-    });
-});
-```
-
-# How to use it? (Browser)
+# How to use it?
 ## Downloading
 
 Download [fox.min.js](https://github.com/lakefox/Fox)
