@@ -76,12 +76,6 @@ new fox(fox, njvscb, ROOM, PORT, (HOST),
 
 Rooms are subcatagories for the lobbies, so in Ninja's vs. Cowboy's there are 2 v 2 room's that four people can fight each other. So I will create a room using a simple counter so the first room is room 0.
 
-### PORT (Node.JS Only)
-
-The port is left open for the developer (you) to decide. It is left open so if the game needs to use a port for another feature.
-
-_Note: there isn't a default port so if you leave it blank the software **will** crash_
-
 ### (HOST)
 
 HOST is the only optional parmeter it will only be used if you want to use a self hosted version of [lake.js](https://github.com/lakefox/Lake/blob/master/lake.js) it defaults to [https://pnm.lakefox.net](https://pnm.lakefox.net) (Recommended)
