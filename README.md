@@ -80,11 +80,6 @@ Rooms are subcatagories for the lobbies, so in Ninja's vs. Cowboy's there are 2 
 
 HOST is the only optional parmeter it will only be used if you want to use a self hosted version of [lake.js](https://github.com/lakefox/Lake/blob/master/lake.js) it defaults to [https://pnm.lakefox.net](https://pnm.lakefox.net) (Recommended)
 
-**You should only use this feature for development purposes to ensure stability**
-``` shell
-$ node fox njvscb 0 8080 http://localhost:3000
-```
-
 Also the connection to pnm.lakefox.net defaults to _https_ if you would like to run it off _http_ on the host opition just put "http"
 
 # License
