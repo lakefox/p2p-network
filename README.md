@@ -68,9 +68,6 @@ _For a real example go to [LakeFox.html](https://github.com/lakefox/Fox/blob/mas
 
 ### Lobby
 Lobbies are basically the game, so if I created a game called Ninja's vs. Cowboy's TM my lobby name could be njvscb
-``` shell
-new fox(fox, njvscb, ROOM, PORT, (HOST),
-```
 
 ### ROOM
 
