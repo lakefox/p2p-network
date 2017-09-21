@@ -69,26 +69,18 @@ _For a real example go to [LakeFox.html](https://github.com/lakefox/Fox/blob/mas
 ### Lobby
 Lobbies are basically the game, so if I created a game called Ninja's vs. Cowboy's TM my lobby name could be njvscb
 ``` shell
-$ node fox njvscb ROOM PORT (HOST)
+new fox(fox, njvscb, ROOM, PORT, (HOST),
 ```
 
 ### ROOM
 
-Rooms are subcatagories for the lobbies, so in Ninja's vs. Cowboy's TM there are 2 v 2 room's that four people can fight each other. So I will create a room using a simple counter so the first room is room 0.
-
-_Note: these name's are just used as an example you can use anything for the LOBBY or ROOM_
-``` shell
-$ node fox njvscb 0 PORT (HOST)
-```
+Rooms are subcatagories for the lobbies, so in Ninja's vs. Cowboy's there are 2 v 2 room's that four people can fight each other. So I will create a room using a simple counter so the first room is room 0.
 
 ### PORT (Node.JS Only)
 
 The port is left open for the developer (you) to decide. It is left open so if the game needs to use a port for another feature.
 
 _Note: there isn't a default port so if you leave it blank the software **will** crash_
-``` shell
-$ node fox njvscb 0 8080 (HOST)
-```
 
 ### (HOST)
 
