@@ -92,7 +92,7 @@ If you are interested in using LakeFox for your project, or have any questions p
 
 This is a service free to use, but I'm broke and can't pay for everything so if you could please donate some btc
 
-![](https://i.imgur.com/gKjjsVU.png)
+<img src="https://i.imgur.com/gKjjsVU.png">
 
 126Z3E8KxHerSeV7edCjfp1zW48ZgPeEKy
 
