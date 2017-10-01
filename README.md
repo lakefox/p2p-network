@@ -87,3 +87,9 @@ Please read the [LICENSE](https://github.com/lakefox/LakeFox.github.io/blob/mast
 ### Want to use LakeFox
 
 If you are interested in using LakeFox for your project, or have any questions please email me at mason@lakefox.net
+
+# Donate
+
+This is a service free to use, but I'm broke and can't pay for everything so if you could please donate some btc
+126Z3E8KxHerSeV7edCjfp1zW48ZgPeEKy
+
