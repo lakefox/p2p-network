@@ -82,7 +82,7 @@ Also the connection to pnm.lakefox.net defaults to _https_ if you would like to 
 
 # License
 
-Please read the [LICENSE](https://github.com/lakefox/LakeFox.github.io/blob/master/LICENSE)
+This is now open under MIT license feel free to add features of correct grammer in this readme
 
 ### Want to use LakeFox
 
@@ -95,4 +95,3 @@ This is a service free to use, but I'm broke and can't pay for everything so if 
 <img src="https://i.imgur.com/gKjjsVU.png">
 
 126Z3E8KxHerSeV7edCjfp1zW48ZgPeEKy
-
