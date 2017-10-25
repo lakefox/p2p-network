@@ -1,11 +1,17 @@
-# Site settings
+---
 title: LakeFox
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: mason@lakefox.net
 author: Mason Wright
-description: "P2P Multiplayer Server"
-baseurl: ""
-url: "http://lakefox.net"
-
-# Build settings
+description: P2P Multiplayer Server
+baseurl: ''
+url: http://lakefox.net
 markdown: kramdown
 permalink: pretty
